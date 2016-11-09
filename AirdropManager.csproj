@@ -30,20 +30,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp">
-      <HintPath>lib\Assembly-CSharp.dll</HintPath>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\Rocket.New\Assembly-CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>lib\Assembly-CSharp-firstpass.dll</HintPath>
+    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\Rocket.New\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
-    <Reference Include="Rocket.API">
-      <HintPath>lib\Rocket.API.dll</HintPath>
+    <Reference Include="Rocket.API, Version=2.6.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\Rocket.New\Rocket.API.dll</HintPath>
     </Reference>
-    <Reference Include="Rocket.Core">
-      <HintPath>lib\Rocket.Core.dll</HintPath>
+    <Reference Include="Rocket.Core, Version=2.4.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\Rocket.New\Rocket.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Rocket.Unturned">
-      <HintPath>lib\Rocket.Unturned.dll</HintPath>
+    <Reference Include="Rocket.Unturned, Version=4.9.8.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Libraries\Rocket.New\Rocket.Unturned.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
