@@ -34,9 +34,6 @@ namespace crythesly.AirdropManager
             TimedDropTimeMin = 600;
             TimedDropTimeMax = 1200;
             TimedDropColor = "Magenta";
-
-
-
         }
     }
 }
