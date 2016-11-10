@@ -1,5 +1,4 @@
 ﻿using Rocket.API.Collections;
-using Rocket.Core.Logging;
 using Rocket.Core.Plugins;
 using Rocket.Unturned.Chat;
 using SDG.Unturned;
@@ -19,6 +18,7 @@ namespace crythesly.AirdropManager
         public int timen;
         public bool mtr = false;
         public bool tdr = false;
+        ChatManager chat;
 
         void FixedUpdate()
         {
@@ -68,6 +68,7 @@ namespace crythesly.AirdropManager
         protected override void Load()
         {
             Instance = this;
+            chat = new ChatManager();
             Rocket.Core.Logging.Logger.LogWarning("Airdrop Manager by CryTheSly has been loaded");
             timen = UnityEngine.Random.Range(Configuration.Instance.TimedDropTimeMin, Configuration.Instance.TimedDropTimeMax);
             time = UnityEngine.Random.Range(Configuration.Instance.MassAirdropTimeMin, Configuration.Instance.MassAirdropTimeMax);
