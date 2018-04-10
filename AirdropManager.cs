@@ -84,8 +84,8 @@ namespace crythesly.AirdropManager
             get
             {
                 return new TranslationList(){
-                {"massdrop_comming","Mass Airdrop Incomming!"},
-                {"timedrop_comming","Airdrop Incomming!"},
+                {"massdrop_comming","Mass Airdrop Incoming!"},
+                {"timedrop_comming","Airdrop Incoming!"},
                 };
             }
         }
