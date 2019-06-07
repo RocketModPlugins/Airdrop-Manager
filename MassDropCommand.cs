@@ -1,48 +1,23 @@
-﻿using Rocket.API;
+﻿using System;
+using Rocket.API;
 using System.Collections.Generic;
 
 namespace crythesly.AirdropManager
 {
-        public class MassAirdropCommand : IRocketCommand
+    public class MassAirdropCommand : IRocketCommand
+    {
+        public AllowedCaller AllowedCaller => AllowedCaller.Both;
 
-        {
-            public void Execute(IRocketPlayer caller, params string[] command)
-            {
-                AirdropManager.Instance.MassDrop();
-            }
+        public string Name => "massdrop";
 
-            public string Help
-            {
-                get { return "Mass Airdrop"; }
-            }
+        public string Help => "Mass Airdrop";
 
-            public string Name
-            {
-            get { return "massdrop"; }
-            }
+        public string Syntax => "";
 
-            public string Syntax
-            {
-                get { return "<player>"; }
-            }
+        public List<string> Aliases => new List<string>() { "mdrop", "massairdrop", "airdropmass", "dropmass", "mairdrop" };
 
-            public List<string> Aliases
-            {
-            get { return new List<string>() { "mdrop", "massairdrop", "airdropmass", "dropmass", "mairdrop" }; }
-            }
+        public List<string> Permissions => new List<string>() { };
 
-            public List<string> Permissions
-            {
-                get
-                {
-                    return new List<string>() { "crythesly.massdrop" };
-                }
-            }
-
-
-            public AllowedCaller AllowedCaller
-            {
-                get { return Rocket.API.AllowedCaller.Both; }
-            }
-        }
+        public void Execute(IRocketPlayer caller, string[] command) => AirdropManager.Instance.MassDrop();
     }
+}

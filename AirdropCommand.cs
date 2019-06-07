@@ -5,46 +5,20 @@ using UnityEngine;
 
 namespace crythesly.AirdropManager
 {
-    public class AirdropCommmand : IRocketCommand
-
+    public class AirdropCommand : IRocketCommand
     {
-        public void Execute(IRocketPlayer caller, params string[] command)
-        {
-            AirdropManager.Instance.TimeDrop();
-        }
+        public AllowedCaller AllowedCaller => AllowedCaller.Both;
 
-        public string Help
-        {
-            get { return "Airdrop"; }
-        }
+        public string Name => "airdrop";
 
-        public string Name
-        {
-            get { return "airdrop"; }
-        }
+        public string Help => "";
 
-        public string Syntax
-        {
-            get { return "<player>"; }
-        }
+        public string Syntax => "";
 
-        public List<string> Aliases
-        {
-            get { return new List<string>() { }; }
-        }
+        public List<string> Aliases => new List<string>();
 
-        public List<string> Permissions
-        {
-            get
-            {
-                return new List<string>() { "crythesly.airdrop" };
-            }
-        }
+        public List<string> Permissions => new List<string>();
 
-
-        public AllowedCaller AllowedCaller
-        {
-            get { return Rocket.API.AllowedCaller.Both; }
-        }
+        public void Execute(IRocketPlayer caller, string[] command) => AirdropManager.Instance.TimeDrop();
     }
 }

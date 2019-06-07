@@ -9,7 +9,7 @@ namespace crythesly.AirdropManager
         public bool MassAirdropTimeRangeEnabled;
         public int MassAirdropTimeMin;
         public int MassAirdropTimeMax;
-        public float MassAirdropDuration;
+        public byte MassAirdropCount;
         public string MassDropColor;
         public bool TimedDropEnabled;
         public int TimedDropInterval;
@@ -26,7 +26,7 @@ namespace crythesly.AirdropManager
             MassAirdropTimeRangeEnabled = false;
             MassAirdropTimeMin = 3000;
             MassAirdropTimeMax = 3600;
-            MassAirdropDuration = 1f;
+            MassAirdropCount = 10;
             MassDropColor = "Magenta";
             TimedDropEnabled = true;
             TimedDropInterval = 1200;
